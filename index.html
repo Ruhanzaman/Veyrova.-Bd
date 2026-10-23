@@ -1,350 +1,103 @@
-
-
-          <button class="filter active" onclick="setCategory('all', this)">All Items</button>
-                          <button class="size-chart-btn" onclick="openSizeChart()">Size Chart</button>
-              </div>
-              <div class="size-options">
-                <button class="size-btn" onclick="selectSize(this)">M</button>
-                <button class="size-btn active" onclick="selectSize(this)">L</button>
-                <button class="size-btn" onclick="selectSize(this)">XL</button>
-                <button class="size-btn" onclick="selectSize(this)">XXL</button>
-              </div>
-            </div>
-
-            <div class="delivery-select">
-              <label>Delivery Area:</label>
-              <select class="d-option">
-                <option value="80">Inside Dhaka (+৳80)</option>
-                <option value="150">Outside Dhaka (+৳150)</option>
-              </select>
-            </div>
-
-            <div class="price-row">
-              <span class="price">৳ 1300</span>
-            </div>
-            <div class="p-actions">
-              <button class="order-btn" onclick="instantOrder(this, 'Veyrova Street Hoodie', 1300)">Order Now ↗</button>
-              <button class="add-cart-btn" onclick="addToCart(this, 'Veyrova Street Hoodie', 1300, '38a5be950c50e0130411f7a9e289f0e1.jpg')">+ Bag</button>
-            </div>
-          </div>
-        </article>
-
-        <!-- Product 4: Veyrova Shirt -->
-        <article class="product" data-category="Shirt" data-name="Veyrova Classic Shirt">
-          <div class="photo">
-            <span class="tag">TRENDING</span>
-            <img src="5d5192e4fa97c7008da4be2497d0c5d9 (1).jpg" alt="Veyrova Shirt">
-          </div>
-          <div class="p-info">
-            <span class="category">Shirt</span>
-            <h3>Veyrova Classic Shirt</h3>
-            <p class="desc">Soft cotton finish · Sharp aesthetic</p>
-            
-            <div class="size-box">
-              <div class="size-header">
-                <label>Select Size:</label>
-                <button class="size-chart-btn" onclick="openSizeChart()">Size Chart</button>
-              </div>
-              <div class="size-options">
-                <button class="size-btn" onclick="selectSize(this)">M</button>
-                <button class="size-btn active" onclick="selectSize(this)">L</button>
-                <button class="size-btn" onclick="selectSize(this)">XL</button>
-                <button class="size-btn" onclick="selectSize(this)">XXL</button>
-              </div>
-            </div>
-
-            <div class="delivery-select">
-              <label>Delivery Area:</label>
-              <select class="d-option">
-                <option value="80">Inside Dhaka (+৳80)</option>
-                <option value="150">Outside Dhaka (+৳150)</option>
-              </select>
-            </div>
-
-            <div class="price-row">
-              <span class="price">৳ 1200</span>
-            </div>
-            <div class="p-actions">
-              <button class="order-btn" onclick="instantOrder(this, 'Veyrova Classic Shirt', 1200)">Order Now ↗</button>
-              <button class="add-cart-btn" onclick="addToCart(this, 'Veyrova Classic Shirt', 1200, '5d5192e4fa97c7008da4be2497d0c5d9 (1).jpg')">+ Bag</button>
-            </div>
-          </div>
-        </article>
-
-      </div>
-    </section>
-
-    <!-- Value Proposition / Delivery Cards -->
-    <div class="delivery-box">
-      <div class="d-card">
-        <h4>🚚 Fast Delivery</h4>
-        <p>Inside Dhaka: <b>৳ 80</b> (2-3 Days)<br>Outside Dhaka: <b>৳ 150</b> (3-5 Days)</p>
-      </div>
-      <div class="d-card">
-        <h4>💵 Cash on Delivery</h4>
-        <p>Pay smoothly when your package arrives at your doorstep.</p>
-      </div>
-      <div class="d-card">
-        <h4>🔄 Easy Exchange</h4>
-        <p>Hassle-free size replacement support upon delivery check.</p>
-      </div>
-    </div>
-
-    <!-- Customer Reviews -->
-    <section class="reviews-section" id="reviews">
-      <span class="eyebrow">Real Feedback</span>
-      <h2 style="margin: 4px 0 0; font-size: 2rem;">Customer Reviews</h2>
-      <div class="reviews-grid">
-        <div class="rev-card">
-          <div class="rev-stars">★★★★★</div>
-          <p>"Hoodie print quality and fabric premium. Fast delivery inside Dhaka!"</p>
-          <div class="rev-author">— Tanvir H., Dhaka</div>
-        </div>
-        <div class="rev-card">
-          <div class="rev-stars">★★★★★</div>
-          <p>"Barca jersey-r fitting and color accuracy top notch. Highly recommended!"</p>
-          <div class="rev-author">— Siyam Ahmed, Chittagong</div>
-        </div>
-        <div class="rev-card">
-          <div class="rev-stars">★★★★★</div>
-          <p>"WhatsApp order process was super smooth. Got my package in 2 days."</p>
-          <div class="rev-author">— Naimul I., Sylhet</div>
-        </div>
-      </div>
-    </section>
-
-    <!-- How to Order -->
-    <section id="how" style="padding-top: 40px;">
-      <span class="eyebrow">Ordering Guide</span>
-      <h2 style="margin: 4px 0 20px; font-size: 2rem;">How to Order</h2>
-      <div class="how">
-        <div class="step">
-          <b>01</b>
-          <h3>Pick Product & Size</h3>
-          <p>Choose your desired clothing piece, select size and delivery area.</p>
-        </div>
-        <div class="step">
-          <b>02</b>
-          <h3>Click Order / Add to Bag</h3>
-          <p>Click "Order Now" to send structured WhatsApp message or add to Bag.</p>
-        </div>
-        <div class="step">
-          <b>03</b>
-          <h3>Confirm Delivery</h3>
-          <p>Send your address details on WhatsApp & confirm Cash on Delivery.</p>
-        </div>
-      </div>
-    </section>
-  </div>
-</main>
-
-<!-- Footer -->
-<footer id="contact">
-  <div class="wrap foot">
-    <div>
-      <div class="foot-brand">
-        <img src="logo.png" alt="VEYROVA" onerror="this.style.display='none'">
-        <span>VEYROVA</span>
-      </div>
-      <p style="margin: 6px 0 12px; font-size: 0.88rem; color: #aaa;">Wear your own vibe • Premium Streetwear</p>
-      <div class="social-links">
-        <a href="https://facebook.com" target="_blank">Facebook Page ↗</a>
-        <a href="https://instagram.com" target="_blank">Instagram ↗</a>
-      </div>
-    </div>
-    <div>
-      <strong style="color: #fff; display: block; margin-bottom: 6px;">Contact & Order Support</strong>
-      WhatsApp: <a id="footerWa" href="#" target="_blank" rel="noopener" style="color: var(--accent); font-weight: 700;">+880 1762-400371</a>
-    </div>
-    <small>© <span id="year"></span> VEYROVA Clothing. All rights reserved.</small>
-  </div>
-</footer>
-
-<!-- Floating WhatsApp Button -->
-<a class="wa-float" id="floatWa" href="#" target="_blank" rel="noopener">
-  💬 WhatsApp Us ↗
-</a>
-
-<!-- Slide-Out Cart Drawer -->
-<div class="cart-drawer" id="cartDrawer">
-  <div class="cart-header">
-    <h3>Your Shopping Bag</h3>
-    <button class="close-cart" onclick="toggleCart()">×</button>
-  </div>
-  <div class="cart-items" id="cartItemsContainer">
-    <p style="color: #888; text-align: center; margin-top: 40px;">Your bag is empty.</p>
-  </div>
-  <div class="cart-footer">
-    <div class="cart-total-row">
-      <span>Subtotal:</span>
-      <span id="cartSubtotal">৳ 0</span>
-    </div>
-    <button class="btn primary" style="width: 100%;" onclick="checkoutCart()">Checkout via WhatsApp ↗</button>
-  </div>
-</div>
-
-<!-- Size Chart Modal -->
-<div class="modal-overlay" id="sizeModal">
-  <div class="modal-content">
-    <button class="modal-close" onclick="closeSizeChart()">×</button>
-    <h3 style="margin-top:0; color:var(--accent);">VEYROVA Size Guide</h3>
-    <p style="font-size:0.85rem; color:#aaa;">Measurements are in inches. Fits true to size.</p>
-    <table class="size-table">
-      <thead>
-        <tr>
-          <th>Size</th>
-          <th>Chest (Inches)</th>
-          <th>Length (Inches)</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr><td>M</td><td>38 - 40</td><td>27</td></tr>
-        <tr><td>L</td><td>40 - 42</td><td>28</td></tr>
-        <tr><td>XL</td><td>42 - 44</td><td>29</td></tr>
-        <tr><td>XXL</td><td>44 - 46</td><td>30</td></tr>
-      </tbody>
-    </table>
-  </div>
-</div>
-
-<script>
-const PHONE = "8801762400371";
-let currentCategory = "all";
-let cart = [];
-
-function waLink(message) {
-  return "https://wa.me/" + PHONE + "?text=" + encodeURIComponent(message);
+<!doctype html>
+<html lang="bn">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#f57224">
+<meta name="description" content="VEYROVA Mall — Premium Streetwear, Hoodies, Shirts & Jerseys in Bangladesh.">
+<link rel="icon" type="image/png" href="logo.png">
+<title>VEYROVA Mall — Streetwear, Hoodies & Jerseys in BD</title>
+<style>
+:root {
+  --orange: #f57224;
+  --dark: #1e1e24;
+  --bg: #f4f4f7;
+  --card: #ffffff;
+  --text: #212121;
+  --muted: #757575;
+  --line: #e2e2e2;
+  --green: #25d366;
+  --radius: 6px;
 }
+* { box-sizing: border-box; outline: none; }
+html { scroll-behavior: smooth; }
+body { margin: 0; background: var(--bg); color: var(--text); font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif; line-height: 1.4; }
+a { color: inherit; text-decoration: none; }
+.wrap { width: min(1200px, 95%); margin: auto; }
 
-function selectSize(btn) {
-  const container = btn.closest(".size-options");
-  container.querySelectorAll(".size-btn").forEach(b => b.classList.remove("active"));
-  btn.classList.add("active");
+.top-header { background: #fafafa; border-bottom: 1px solid var(--line); font-size: 0.75rem; color: var(--muted); padding: 6px 0; }
+.top-header .wrap { display: flex; justify-content: space-between; align-items: center; }
+header { background: #fff; position: sticky; top: 0; z-index: 100; box-shadow: 0 2px 8px rgba(0,0,0,0.08); }
+.nav-main { display: flex; align-items: center; justify-content: space-between; gap: 16px; padding: 12px 0; }
+.brand-logo { display: flex; align-items: center; gap: 8px; font-weight: 900; font-size: 1.4rem; color: var(--orange); text-transform: uppercase; }
+.brand-logo img { height: 36px; width: auto; object-fit: contain; }
+
+.search-container { flex: 1; max-width: 550px; display: flex; }
+.search-container input { width: 100%; background: #eff0f5; border: 2px solid transparent; padding: 10px 14px; border-radius: var(--radius) 0 0 var(--radius); font-size: 0.88rem; }
+.search-container input:focus { border-color: var(--orange); background: #fff; }
+.search-btn { background: var(--orange); border: none; color: #fff; padding: 0 18px; border-radius: 0 var(--radius) var(--radius) 0; cursor: pointer; font-weight: 700; }
+
+.cart-trigger { background: #fff0e8; border: 1px solid #ffd5c0; color: var(--orange); padding: 8px 14px; border-radius: var(--radius); font-weight: 700; font-size: 0.85rem; cursor: pointer; display: flex; align-items: center; gap: 6px; }
+.cart-count { background: var(--orange); color: #fff; font-size: 0.7rem; border-radius: 99px; padding: 2px 6px; }
+
+.hero-banner { background: linear-gradient(135deg, #f57224 0%, #d04e02 100%); color: #fff; border-radius: var(--radius); margin: 16px 0; padding: 24px; display: flex; justify-content: space-between; align-items: center; }
+.hero-banner h1 { font-size: 1.8rem; margin: 0 0 8px; }
+.hero-banner p { margin: 0; font-size: 0.9rem; opacity: 0.9; }
+
+.category-bar { display: flex; gap: 10px; margin-bottom: 16px; overflow-x: auto; padding-bottom: 4px; }
+.cat-item { background: #fff; border: 1px solid var(--line); padding: 8px 16px; border-radius: 20px; font-size: 0.85rem; font-weight: 600; cursor: pointer; white-space: nowrap; }
+.cat-item.active, .cat-item:hover { background: var(--orange); color: #fff; border-color: var(--orange); }
+
+.products-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 14px; }
+.product-card { background: var(--card); border-radius: var(--radius); overflow: hidden; border: 1px solid var(--line); display: flex; flex-direction: column; transition: 0.2s; }
+.product-card:hover { border-color: var(--orange); box-shadow: 0 4px 12px rgba(0,0,0,0.08); }
+.p-image { aspect-ratio: 1/1; position: relative; background: #fafafa; }
+.p-image img { width: 100%; height: 100%; object-fit: cover; }
+.badge { position: absolute; top: 8px; left: 8px; background: var(--orange); color: #fff; font-size: 0.65rem; font-weight: 800; padding: 2px 6px; border-radius: 2px; text-transform: uppercase; }
+
+.p-details { padding: 12px; display: flex; flex-direction: column; flex: 1; }
+.p-title { font-size: 0.88rem; font-weight: 600; margin: 0 0 6px; height: 36px; overflow: hidden; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; }
+.current-price { color: var(--orange); font-size: 1.15rem; font-weight: 800; }
+.old-price { color: var(--muted); font-size: 0.75rem; text-decoration: line-through; margin-left: 6px; }
+
+.p-size-box { margin: 6px 0; }
+.p-size-box label { font-size: 0.7rem; color: var(--muted); display: block; margin-bottom: 2px; font-weight: 600; }
+.sizes-list { display: flex; gap: 4px; }
+.size-chip { border: 1px solid var(--line); background: #fdfdfd; font-size: 0.7rem; padding: 2px 6px; border-radius: 2px; cursor: pointer; font-weight: 700; flex: 1; text-align: center; }
+.size-chip.active { border-color: var(--orange); background: #fff0e8; color: var(--orange); }
+
+.p-delivery { margin-bottom: 8px; }
+.p-delivery select { width: 100%; font-size: 0.72rem; border: 1px solid var(--line); border-radius: 2px; padding: 4px; background: #fafafa; }
+
+.card-actions { display: flex; gap: 6px; margin-top: auto; }
+.btn-buy { background: var(--orange); color: #fff; border: none; padding: 7px; font-size: 0.78rem; font-weight: 700; border-radius: 2px; cursor: pointer; flex: 1; text-align: center; }
+.btn-cart { background: #ffe8de; color: var(--orange); border: 1px solid #ffd0ba; padding: 7px; font-size: 0.78rem; font-weight: 700; border-radius: 2px; cursor: pointer; }
+
+.cart-drawer { position: fixed; top: 0; right: -400px; width: 100%; max-width: 380px; height: 100%; background: #fff; box-shadow: -4px 0 20px rgba(0,0,0,0.15); z-index: 1000; transition: right 0.3s; display: flex; flex-direction: column; }
+.cart-drawer.open { right: 0; }
+.cart-head { background: var(--dark); color: #fff; padding: 14px; display: flex; justify-content: space-between; align-items: center; }
+.cart-body { flex: 1; padding: 14px; overflow-y: auto; }
+.cart-item { display: flex; gap: 10px; border-bottom: 1px solid var(--line); padding-bottom: 10px; margin-bottom: 10px; }
+.cart-item img { width: 45px; height: 45px; object-fit: cover; border-radius: 3px; }
+.cart-foot { padding: 14px; border-top: 1px solid var(--line); background: #fafafa; }
+.subtotal-line { display: flex; justify-content: space-between; font-weight: 800; font-size: 1.05rem; margin-bottom: 10px; }
+
+.wa-float { position: fixed; bottom: 20px; right: 20px; background: var(--green); color: #fff; font-weight: 800; font-size: 0.85rem; padding: 10px 16px; border-radius: 50px; box-shadow: 0 4px 12px rgba(0,0,0,0.2); z-index: 90; display: flex; align-items: center; gap: 6px; }
+
+footer { background: var(--dark); color: #b0b0b0; padding: 30px 0 20px; margin-top: 40px; font-size: 0.8rem; text-align: center; }
+
+@media(max-width: 900px) {
+  .products-grid { grid-template-columns: repeat(2, 1fr); gap: 10px; }
+  .hero-banner { flex-direction: column; text-align: center; gap: 10px; }
 }
+</style>
+</head>
+<body>
 
-function instantOrder(btn, productName, basePrice) {
-  const card = btn.closest(".product");
-  const activeSizeBtn = card.querySelector(".size-btn.active");
-  const selectedSize = activeSizeBtn ? activeSizeBtn.textContent : "L";
-  const deliverySelect = card.querySelector(".d-option");
-  const deliveryCharge = parseInt(deliverySelect.value, 10);
-  const deliveryLoc = deliveryCharge === 80 ? "Inside Dhaka (৳80)" : "Outside Dhaka (৳150)";
-  const totalPrice = basePrice + deliveryCharge;
-
-  const msg = `আসসালামু আলাইকুম, VEYROVA থেকে সরাসরি অর্ডার করতে চাই:\n\n` +
-              `📦 পণ্য: ${productName}\n` +
-              `🏷️ দাম: ৳${basePrice}\n` +
-              `📏 সাইজ: ${selectedSize}\n` +
-              `🚚 ডেলিভারি স্থান: ${deliveryLoc}\n` +
-              `💰 সর্বমোট মূল্য: ৳${totalPrice}\n\n` +
-              `আমার নাম:\nফোন নম্বর:\nঠিকানা:`;
-
-  window.open(waLink(msg), "_blank", "noopener");
-}
-
-function toggleCart() {
-  document.getElementById("cartDrawer").classList.toggle("open");
-}
-
-function addToCart(btn, productName, price, image) {
-  const card = btn.closest(".product");
-  const activeSizeBtn = card.querySelector(".size-btn.active");
-  const size = activeSizeBtn ? activeSizeBtn.textContent : "L";
-
-  cart.push({ name: productName, price: price, size: size, img: image });
-  updateCartUI();
-  toggleCart();
-}
-
-function removeFromCart(index) {
-  cart.splice(index, 1);
-  updateCartUI();
-}
-
-function updateCartUI() {
-  const container = document.getElementById("cartItemsContainer");
-  const countEl = document.getElementById("cartCount");
-  const subtotalEl = document.getElementById("cartSubtotal");
-
-  countEl.textContent = cart.length;
-
-  if (cart.length === 0) {
-    container.innerHTML = `<p style="color: #888; text-align: center; margin-top: 40px;">Your bag is empty.</p>`;
-    subtotalEl.textContent = "৳ 0";
-    return;
-  }
-
-  let html = "";
-  let subtotal = 0;
-
-  cart.forEach((item, index) => {
-    subtotal += item.price;
-    html += `
-      <div class="cart-item">
-        <img src="${item.img}" alt="${item.name}">
-        <div class="cart-item-info">
-          <h4>${item.name}</h4>
-          <p>Size: <b>${item.size}</b> | Price: ৳${item.price}</p>
-          <span class="cart-item-remove" onclick="removeFromCart(${index})">Remove</span>
-        </div>
-      </div>
-    `;
-  });
-
-  container.innerHTML = html;
-  subtotalEl.textContent = `৳ ${subtotal}`;
-}
-
-function checkoutCart() {
-  if (cart.length === 0) return alert("Your bag is empty!");
-
-  let summary = cart.map((item, i) => `${i+1}. ${item.name} (${item.size}) - ৳${item.price}`).join("\n");
-  let total = cart.reduce((sum, item) => sum + item.price, 0);
-
-  const msg = `আসসালামু আলাইকুম, VEYROVA থেকে শপিং ব্যাগ অর্ডার করতে চাই:\n\n${summary}\n\n` +
-              `💰 সাবটোটাল: ৳${total}\n\n` +
-              `আমার নাম:\nফোন নম্বর:\nঠিকানা:`;
-
-  window.open(waLink(msg), "_blank", "noopener");
-}
-
-function setCategory(cat, btn) {
-  currentCategory = cat;
-  document.querySelectorAll(".filter").forEach(b => b.classList.remove("active"));
-  btn.classList.add("active");
-  filterProducts();
-}
-
-function filterProducts() {
-  const query = document.getElementById("searchInput").value.toLowerCase();
-  document.querySelectorAll(".product").forEach(card => {
-    const name = card.dataset.name.toLowerCase();
-    const cat = card.dataset.category;
-    const matchesCat = currentCategory === "all" || cat === currentCategory;
-    const matchesSearch = name.includes(query);
-
-    card.style.display = matchesCat && matchesSearch ? "flex" : "none";
-  });
-}
-
-function openSizeChart() { document.getElementById("sizeModal").classList.add("active"); }
-function closeSizeChart() { document.getElementById("sizeModal").classList.remove("active"); }
-
-const genericMsg = "আসসালামু আলাইকুম, VEYROVA-এর প্রোডাক্ট সম্পর্কে জানতে চাই।";
-document.getElementById("footerWa").href = waLink(genericMsg);
-document.getElementById("floatWa").href = waLink(genericMsg);
-document.getElementById("year").textContent = new Date().getFullYear();
-</script>
-</body>
-</html>
 <div class="top-header">
   <div class="wrap">
     <div>Welcome to <b>VEYROVA Official Mall</b></div>
-    <div class="top-links">
-      <span>100% Authentic</span>
-      <span>Cash on Delivery</span>
-      <span>Helpline: +8801762400371</span>
-    </div>
+    <div>Cash on Delivery | Hotline: +8801762400371</div>
   </div>
 </div>
 
@@ -354,15 +107,12 @@ document.getElementById("year").textContent = new Date().getFullYear();
       <img src="logo.png" alt="VEYROVA" onerror="this.style.display='none'">
       VEYROVA
     </a>
-    
     <div class="search-container">
-      <input type="text" id="searchInput" placeholder="Search in VEYROVA (Jersey, Hoodie, Shirt...)" onkeyup="filterProducts()">
-      <button class="search-btn">🔍 Search</button>
+      <input type="text" id="searchInput" placeholder="Search Hoodie, Shirt, Jersey..." onkeyup="renderProducts()">
+      <button class="search-btn">🔍</button>
     </div>
-
     <div class="cart-trigger" onclick="toggleCart()">
-      🛒 Bag
-      <span class="cart-count" id="cartCount">0</span>
+      🛒 Bag <span class="cart-count" id="cartCount">0</span>
     </div>
   </div>
 </header>
@@ -370,353 +120,267 @@ document.getElementById("year").textContent = new Date().getFullYear();
 <main class="wrap">
   <div class="hero-banner">
     <div>
-      <span class="banner-badge">EXCLUSIVE STREETWEAR DROP</span>
-      <h1>WEAR YOUR OWN VIBE</h1>
-      <p>Premium Quality Hoodies, Fan Edition Jerseys & Modern Shirts. Express delivery all over Bangladesh!</p>
+      <h1>VEYROVA STREETWEAR DROP</h1>
+      <p>Explore 60+ Exclusive Hoodies, Shirts & Jerseys tailored for Bangladesh.</p>
     </div>
-    <div style="text-align: center;">
-      <img src="logo.png" alt="VEYROVA" style="max-height: 140px; max-width: 100%; object-fit: contain;" onerror="this.style.display='none'">
-    </div>
+    <img src="logo.png" alt="Logo" style="max-height:80px;" onerror="this.style.display='none'">
   </div>
 
-  <div class="flash-sale">
-    <div class="flash-head">
-      <div class="flash-title">⚡ FLASH SALE</div>
-      <div class="timer">
-        Ending in: 
-        <span class="timer-box" id="thours">05</span> : 
-        <span class="timer-box" id="tmin">42</span> : 
-        <span class="timer-box" id="tsec">18</span>
-      </div>
-    </div>
-
-    <div class="category-bar">
-      <div class="cat-item active" onclick="filterCat('all', this)">All Items</div>
-      <div class="cat-item" onclick="filterCat('Jersey', this)">Football Jerseys</div>
-      <div class="cat-item" onclick="filterCat('Hoodie', this)">Street Hoodies</div>
-      <div class="cat-item" onclick="filterCat('Shirt', this)">Classic Shirts</div>
-    </div>
-
-    <div class="products-grid" id="products">
-
-      <article class="product-card" data-category="Jersey" data-name="Spain Football Jersey">
-        <div class="p-image">
-          <span class="discount-tag">-25% OFF</span>
-          <img src="0ac714ad2d97022fc99b913b5eb6b555.jpg" alt="Spain Jersey">
-        </div>
-        <div class="p-details">
-          <h3 class="p-title">Spain Football Jersey — Official Fan Edition</h3>
-          
-          <div class="p-size-box">
-            <label>Select Size:</label>
-            <div class="sizes-list">
-              <span class="size-chip" onclick="pickSize(this)">M</span>
-              <span class="size-chip active" onclick="pickSize(this)">L</span>
-              <span class="size-chip" onclick="pickSize(this)">XL</span>
-              <span class="size-chip" onclick="pickSize(this)">XXL</span>
-            </div>
-          </div>
-
-          <div class="p-delivery">
-            <select class="d-select">
-              <option value="80">Inside Dhaka (+৳80)</option>
-              <option value="150">Outside Dhaka (+৳150)</option>
-            </select>
-          </div>
-
-          <div class="p-price-row">
-            <span class="current-price">৳600</span>
-            <span class="old-price">৳800</span>
-          </div>
-
-          <div class="card-actions" style="margin-top: 10px;">
-            <button class="btn-buy" onclick="buyNow(this, 'Spain Football Jersey', 600)">Buy Now</button>
-            <button class="btn-cart" onclick="addToCart(this, 'Spain Football Jersey', 600, '0ac714ad2d97022fc99b913b5eb6b555.jpg')">+ Bag</button>
-          </div>
-        </div>
-      </article>
-
-      <article class="product-card" data-category="Jersey" data-name="Barca Football Jersey">
-        <div class="p-image">
-          <span class="discount-tag">-22% OFF</span>
-          <img src="122380da3e153e1c0232f4390fbda6ad.jpg" alt="Barca Jersey">
-        </div>
-        <div class="p-details">
-          <h3 class="p-title">Barca Football Jersey — Premium Edition</h3>
-          
-          <div class="p-size-box">
-            <label>Select Size:</label>
-            <div class="sizes-list">
-              <span class="size-chip" onclick="pickSize(this)">M</span>
-              <span class="size-chip active" onclick="pickSize(this)">L</span>
-              <span class="size-chip" onclick="pickSize(this)">XL</span>
-              <span class="size-chip" onclick="pickSize(this)">XXL</span>
-            </div>
-          </div>
-
-          <div class="p-delivery">
-            <select class="d-select">
-              <option value="80">Inside Dhaka (+৳80)</option>
-              <option value="150">Outside Dhaka (+৳150)</option>
-            </select>
-          </div>
-
-          <div class="p-price-row">
-            <span class="current-price">৳700</span>
-            <span class="old-price">৳900</span>
-          </div>
-
-          <div class="card-actions" style="margin-top: 10px;">
-            <button class="btn-buy" onclick="buyNow(this, 'Barca Football Jersey', 700)">Buy Now</button>
-            <button class="btn-cart" onclick="addToCart(this, 'Barca Football Jersey', 700, '122380da3e153e1c0232f4390fbda6ad.jpg')">+ Bag</button>
-          </div>
-        </div>
-      </article>
-
-      <article class="product-card" data-category="Hoodie" data-name="Veyrova Street Hoodie">
-        <div class="p-image">
-          <span class="discount-tag">-18% OFF</span>
-          <img src="38a5be950c50e0130411f7a9e289f0e1.jpg" alt="Veyrova Hoodie">
-        </div>
-        <div class="p-details">
-          <h3 class="p-title">Veyrova Heavyweight Fleece Street Hoodie</h3>
-          
-          <div class="p-size-box">
-            <label>Select Size:</label>
-            <div class="sizes-list">
-              <span class="size-chip" onclick="pickSize(this)">M</span>
-              <span class="size-chip active" onclick="pickSize(this)">L</span>
-              <span class="size-chip" onclick="pickSize(this)">XL</span>
-              <span class="size-chip" onclick="pickSize(this)">XXL</span>
-            </div>
-          </div>
-
-          <div class="p-delivery">
-            <select class="d-select">
-              <option value="80">Inside Dhaka (+৳80)</option>
-              <option value="150">Outside Dhaka (+৳150)</option>
-            </select>
-          </div>
-
-          <div class="p-price-row">
-            <span class="current-price">৳1300</span>
-            <span class="old-price">৳1600</span>
-          </div>
-
-          <div class="card-actions" style="margin-top: 10px;">
-            <button class="btn-buy" onclick="buyNow(this, 'Veyrova Street Hoodie', 1300)">Buy Now</button>
-            <button class="btn-cart" onclick="addToCart(this, 'Veyrova Street Hoodie', 1300, '38a5be950c50e0130411f7a9e289f0e1.jpg')">+ Bag</button>
-          </div>
-        </div>
-      </article>
-
-      <article class="product-card" data-category="Shirt" data-name="Veyrova Classic Shirt">
-        <div class="p-image">
-          <span class="discount-tag">-20% OFF</span>
-          <img src="5d5192e4fa97c7008da4be2497d0c5d9 (1).jpg" alt="Veyrova Shirt">
-        </div>
-        <div class="p-details">
-          <h3 class="p-title">Veyrova Classic Premium Casual Shirt</h3>
-          
-          <div class="p-size-box">
-            <label>Select Size:</label>
-            <div class="sizes-list">
-              <span class="size-chip" onclick="pickSize(this)">M</span>
-              <span class="size-chip active" onclick="pickSize(this)">L</span>
-              <span class="size-chip" onclick="pickSize(this)">XL</span>
-              <span class="size-chip" onclick="pickSize(this)">XXL</span>
-            </div>
-          </div>
-
-          <div class="p-delivery">
-            <select class="d-select">
-              <option value="80">Inside Dhaka (+৳80)</option>
-              <option value="150">Outside Dhaka (+৳150)</option>
-            </select>
-          </div>
-
-          <div class="p-price-row">
-            <span class="current-price">৳1200</span>
-            <span class="old-price">৳1500</span>
-          </div>
-
-          <div class="card-actions" style="margin-top: 10px;">
-            <button class="btn-buy" onclick="buyNow(this, 'Veyrova Classic Shirt', 1200)">Buy Now</button>
-            <button class="btn-cart" onclick="addToCart(this, 'Veyrova Classic Shirt', 1200, '5d5192e4fa97c7008da4be2497d0c5d9 (1).jpg')">+ Bag</button>
-          </div>
-        </div>
-      </article>
-
-    </div>
+  <div class="category-bar">
+    <div class="cat-item active" onclick="setCategory('all', this)">All Items (60)</div>
+    <div class="cat-item" onclick="setCategory('Hoodie', this)">Hoodies (20)</div>
+    <div class="cat-item" onclick="setCategory('Shirt', this)">Shirts (20)</div>
+    <div class="cat-item" onclick="setCategory('Jersey', this)">Jerseys (20)</div>
   </div>
+
+  <div class="products-grid" id="productGrid"></div>
 </main>
+
 <div class="cart-drawer" id="cartDrawer">
   <div class="cart-head">
     <span>Shopping Bag</span>
     <button style="background:none; border:none; color:#fff; font-size:1.2rem; cursor:pointer;" onclick="toggleCart()">✕</button>
   </div>
   <div class="cart-body" id="cartItems">
-    <p style="color:var(--muted); text-align:center; margin-top:30px;">Your bag is currently empty.</p>
+    <p style="color:var(--muted); text-align:center; margin-top:30px;">Your bag is empty.</p>
   </div>
   <div class="cart-foot">
     <div class="subtotal-line">
       <span>Subtotal:</span>
-      <span id="cartSubtotal" style="color:var(--daraz-orange);">৳0</span>
+      <span id="cartSubtotal" style="color:var(--orange);">৳0</span>
     </div>
-    <button class="btn-buy" style="width:100%; padding:12px; font-size:0.95rem;" onclick="checkoutCart()">Confirm Order on WhatsApp ↗</button>
+    <button class="btn-buy" style="width:100%; padding:10px;" onclick="checkoutCart()">Confirm Order on WhatsApp ↗</button>
   </div>
 </div>
 
-<a class="wa-float" id="waFloat" href="#" target="_blank" rel="noopener">
-  💬 WhatsApp Order
-</a>
+<a class="wa-float" id="waFloat" href="#" target="_blank" rel="noopener">💬 WhatsApp Order</a>
 
 <footer>
-  <div class="wrap footer-wrap">
-    <div>
-      <h4>Customer Care</h4>
-      <p>Help Center / How to Buy<br>Returns & Refunds<br>Contact Support</p>
-    </div>
-    <div>
-      <h4>VEYROVA Mall</h4>
-      <p>About VEYROVA Streetwear<br>Terms & Conditions<br>Privacy Policy</p>
-    </div>
-    <div>
-      <h4>Payment & Delivery</h4>
-      <p>Cash on Delivery Nationwide<br>Inside Dhaka: ৳80 (2-3 Days)<br>Outside Dhaka: ৳150 (3-5 Days)</p>
-    </div>
-  </div>
-  <div style="text-align:center; margin-top:20px; border-top:1px solid #444; padding-top:15px;">
-    © <span id="year"></span> VEYROVA Mall. All Rights Reserved.
-  </div>
+  © <span id="year"></span> VEYROVA Mall Bangladesh. All Rights Reserved.
 </footer>
 
 <script>
 const PHONE = "8801762400371";
 let cart = [];
-let currentCat = "all";
+let currentCategory = "all";
+
+const products = [
+  // --- 20 HOODIES ---
+  { id: 1, name: "Veyrova Black Oversized Fleece Hoodie", cat: "Hoodie", price: 1150, old: 1400, img: "38a5be950c50e0130411f7a9e289f0e1.jpg", tag: "Hot Drop" },
+  { id: 2, name: "Minimalist White Streetwear Hoodie", cat: "Hoodie", price: 1200, old: 1450, img: "38a5be950c50e0130411f7a9e289f0e1.jpg", tag: "Trending" },
+  { id: 3, name: "Vintage Wash Heavyweight Hoodie", cat: "Hoodie", price: 1350, old: 1600, img: "38a5be950c50e0130411f7a9e289f0e1.jpg", tag: "New" },
+  { id: 4, name: "Olive Green Drop-shoulder Hoodie", cat: "Hoodie", price: 1100, old: 1350, img: "38a5be950c50e0130411f7a9e289f0e1.jpg", tag: "Sale" },
+  { id: 5, name: "Charcoal Grey Zip-Up Hoodie", cat: "Hoodie", price: 1250, old: 1500, img: "38a5be950c50e0130411f7a9e289f0e1.jpg", tag: "Popular" },
+  { id: 6, name: "Navy Blue Graphic Print Hoodie", cat: "Hoodie", price: 1050, old: 1300, img: "38a5be950c50e0130411f7a9e289f0e1.jpg", tag: "Best" },
+  { id: 7, name: "Maroon Cyberpunk Techwear Hoodie", cat: "Hoodie", price: 1400, old: 1700, img: "38a5be950c50e0130411f7a9e289f0e1.jpg", tag: "Limited" },
+  { id: 8, name: "Beige Neutral Tone Fleece Hoodie", cat: "Hoodie", price: 1150, old: 1400, img: "38a5be950c50e0130411f7a9e289f0e1.jpg", tag: "Classic" },
+  { id: 9, name: "Coffee Brown Aesthetic Hoodie", cat: "Hoodie", price: 1200, old: 1450, img: "38a5be950c50e0130411f7a9e289f0e1.jpg", tag: "Hot" },
+  { id: 10, name: "Off-White Acid Wash Hoodie", cat: "Hoodie", price: 1300, old: 1550, img: "38a5be950c50e0130411f7a9e289f0e1.jpg", tag: "New" },
+  { id: 11, name: "Jet Black Skull Graphic Hoodie", cat: "Hoodie", price: 1250, old: 1500, img: "38a5be950c50e0130411f7a9e289f0e1.jpg", tag: "Street" },
+  { id: 12, name: "Mustard Yellow Street Hoodie", cat: "Hoodie", price: 1050, old: 1300, img: "38a5be950c50e0130411f7a9e289f0e1.jpg", tag: "Sale" },
+  { id: 13, name: "Lavender Pastel Oversized Hoodie", cat: "Hoodie", price: 1150, old: 1400, img: "38a5be950c50e0130411f7a9e289f0e1.jpg", tag: "Soft" },
+  { id: 14, name: "Emerald Green High-Neck Hoodie", cat: "Hoodie", price: 1350, old: 1600, img: "38a5be950c50e0130411f7a9e289f0e1.jpg", tag: "Winter" },
+  { id: 15, name: "Slate Grey Cargo Pocket Hoodie", cat: "Hoodie", price: 1400, old: 1650, img: "38a5be950c50e0130411f7a9e289f0e1.jpg", tag: "Utility" },
+  { id: 16, name: "Red Dragon Edition Hoodie", cat: "Hoodie", price: 1250, old: 1500, img: "38a5be950c50e0130411f7a9e289f0e1.jpg", tag: "Graphic" },
+  { id: 17, name: "Royal Blue Basic Fleece Hoodie", cat: "Hoodie", price: 950, old: 1200, img: "38a5be950c50e0130411f7a9e289f0e1.jpg", tag: "Value" },
+  { id: 18, name: "Dark Teal Minimalist Hoodie", cat: "Hoodie", price: 1100, old: 1350, img: "38a5be950c50e0130411f7a9e289f0e1.jpg", tag: "Chill" },
+  { id: 19, name: "Sandstone Thermal Lined Hoodie", cat: "Hoodie", price: 1450, old: 1750, img: "38a5be950c50e0130411f7a9e289f0e1.jpg", tag: "Warm" },
+  { id: 20, name: "Urban Camo Streetwear Hoodie", cat: "Hoodie", price: 1300, old: 1550, img: "38a5be950c50e0130411f7a9e289f0e1.jpg", tag: "Camo" },
+
+  // --- 20 SHIRTS ---
+  { id: 21, name: "Veyrova Black Twill Casual Shirt", cat: "Shirt", price: 750, old: 950, img: "5d5192e4fa97c7008da4be2497d0c5d9 (1).jpg", tag: "Best" },
+  { id: 22, name: "Oxford White Formal/Casual Shirt", cat: "Shirt", price: 700, old: 900, img: "5d5192e4fa97c7008da4be2497d0c5d9 (1).jpg", tag: "Classic" },
+  { id: 23, name: "Cuban Collar Tropical Printed Shirt", cat: "Shirt", price: 800, old: 1000, img: "5d5192e4fa97c7008da4be2497d0c5d9 (1).jpg", tag: "Summer" },
+  { id: 24, name: "Olive Green Corduroy Shirt", cat: "Shirt", price: 900, old: 1100, img: "5d5192e4fa97c7008da4be2497d0c5d9 (1).jpg", tag: "Trending" },
+  { id: 25, name: "Classic Blue Denim Shirt", cat: "Shirt", price: 850, old: 1050, img: "5d5192e4fa97c7008da4be2497d0c5d9 (1).jpg", tag: "Denim" },
+  { id: 26, name: "Maroon Check Flannel Shirt", cat: "Shirt", price: 800, old: 1000, img: "5d5192e4fa97c7008da4be2497d0c5d9 (1).jpg", tag: "Flannel" },
+  { id: 27, name: "Beige Linen Summer Shirt", cat: "Shirt", price: 750, old: 950, img: "5d5192e4fa97c7008da4be2497d0c5d9 (1).jpg", tag: "Linen" },
+  { id: 28, name: "Charcoal Grey Oversized Shirt", cat: "Shirt", price: 850, old: 1050, img: "5d5192e4fa97c7008da4be2497d0c5d9 (1).jpg", tag: "Street" },
+  { id: 29, name: "Navy Blue Striped Casual Shirt", cat: "Shirt", price: 720, old: 920, img: "5d5192e4fa97c7008da4be2497d0c5d9 (1).jpg", tag: "Striped" },
+  { id: 30, name: "Sage Green Oxford Shirt", cat: "Shirt", price: 780, old: 980, img: "5d5192e4fa97c7008da4be2497d0c5d9 (1).jpg", tag: "Soft" },
+  { id: 31, name: "Mustard Yellow Corduroy Shirt", cat: "Shirt", price: 920, old: 1150, img: "5d5192e4fa97c7008da4be2497d0c5d9 (1).jpg", tag: "Vibrant" },
+  { id: 32, name: "Pink Pastel Casual Shirt", cat: "Shirt", price: 700, old: 900, img: "5d5192e4fa97c7008da4be2497d0c5d9 (1).jpg", tag: "Pastel" },
+  { id: 33, name: "Dark Brown Twill Shirt", cat: "Shirt", price: 760, old: 960, img: "5d5192e4fa97c7008da4be2497d0c5d9 (1).jpg", tag: "Twill" },
+  { id: 34, name: "White Cuban Camp Shirt", cat: "Shirt", price: 820, old: 1020, img: "5d5192e4fa97c7008da4be2497d0c5d9 (1).jpg", tag: "Camp" },
+  { id: 35, name: "Black Satin Finish Party Shirt", cat: "Shirt", price: 880, old: 1100, img: "5d5192e4fa97c7008da4be2497d0c5d9 (1).jpg", tag: "Party" },
+  { id: 36, name: "Checkered Red & Black Flannel", cat: "Shirt", price: 830, old: 1030, img: "5d5192e4fa97c7008da4be2497d0c5d9 (1).jpg", tag: "Check" },
+  { id: 37, name: "Mint Green Linen Shirt", cat: "Shirt", price: 750, old: 950, img: "5d5192e4fa97c7008da4be2497d0c5d9 (1).jpg", tag: "Mint" },
+  { id: 38, name: "Slate Grey Workwear Shirt", cat: "Shirt", price: 800, old: 1000, img: "5d5192e4fa97c7008da4be2497d0c5d9 (1).jpg", tag: "Work" },
+  { id: 39, name: "Teal Blue Casual Shirt", cat: "Shirt", price: 720, old: 920, img: "5d5192e4fa97c7008da4be2497d0c5d9 (1).jpg", tag: "Casual" },
+  { id: 40, name: "Khaki Utility Pocket Shirt", cat: "Shirt", price: 850, old: 1050, img: "5d5192e4fa97c7008da4be2497d0c5d9 (1).jpg", tag: "Utility" },
+
+  // --- 20 JERSEYS ---
+  { id: 41, name: "Spain Home Fan Edition Jersey", cat: "Jersey", price: 600, old: 800, img: "0ac714ad2d97022fc99b913b5eb6b555.jpg", tag: "Spain" },
+  { id: 42, name: "Barca Home Classic Jersey", cat: "Jersey", price: 700, old: 900, img: "122380da3e153e1c0232f4390fbda6ad.jpg", tag: "Barca" },
+  { id: 43, name: "Argentina World Cup Champion Jersey", cat: "Jersey", price: 650, old: 850, img: "0ac714ad2d97022fc99b913b5eb6b555.jpg", tag: "Arg" },
+  { id: 44, name: "Brazil Yellow Home Jersey", cat: "Jersey", price: 650, old: 850, img: "122380da3e153e1c0232f4390fbda6ad.jpg", tag: "Brazil" },
+  { id: 45, name: "Real Madrid Home Jersey", cat: "Jersey", price: 680, old: 880, img: "0ac714ad2d97022fc99b913b5eb6b555.jpg", tag: "Madrid" },
+  { id: 46, name: "Manchester City Home Jersey", cat: "Jersey", price: 670, old: 870, img: "122380da3e153e1c0232f4390fbda6ad.jpg", tag: "City" },
+  { id: 47, name: "Arsenal Red/White Jersey", cat: "Jersey", price: 660, old: 860, img: "0ac714ad2d97022fc99b913b5eb6b555.jpg", tag: "Arsenal" },
+  { id: 48, name: "Manchester United Retro Jersey", cat: "Jersey", price: 700, old: 900, img: "122380da3e153e1c0232f4390fbda6ad.jpg", tag: "ManU" },
+  { id: 49, name: "AC Milan Classic Red & Black Jersey", cat: "Jersey", price: 650, old: 850, img: "0ac714ad2d97022fc99b913b5eb6b555.jpg", tag: "Milan" },
+  { id: 50, name: "Inter Miami Pink Jersey", cat: "Jersey", price: 680, old: 880, img: "122380da3e153e1c0232f4390fbda6ad.jpg", tag: "Miami" },
+  { id: 51, name: "Portugal Euro Edition Jersey", cat: "Jersey", price: 650, old: 850, img: "0ac714ad2d97022fc99b913b5eb6b555.jpg", tag: "Portugal" },
+  { id: 52, name: "France Home Blue Jersey", cat: "Jersey", price: 660, old: 860, img: "122380da3e153e1c0232f4390fbda6ad.jpg", tag: "France" },
+  { id: 53, name: "Germany White Home Jersey", cat: "Jersey", price: 650, old: 850, img: "0ac714ad2d97022fc99b913b5eb6b555.jpg", tag: "Germany" },
+  { id: 54, name: "Al-Nassr Yellow Jersey", cat: "Jersey", price: 620, old: 820, img: "122380da3e153e1c0232f4390fbda6ad.jpg", tag: "CR7" },
+  { id: 55, name: "Bayern Munich Red Jersey", cat: "Jersey", price: 670, old: 870, img: "0ac714ad2d97022fc99b913b5eb6b555.jpg", tag: "Bayern" },
+  { id: 56, name: "PSG Home Edition Jersey", cat: "Jersey", price: 680, old: 880, img: "122380da3e153e1c0232f4390fbda6ad.jpg", tag: "PSG" },
+  { id: 57, name: "Juventus Black & White Jersey", cat: "Jersey", price: 650, old: 850, img: "0ac714ad2d97022fc99b913b5eb6b555.jpg", tag: "Juve" },
+  { id: 58, name: "Liverpool Home Red Jersey", cat: "Jersey", price: 660, old: 860, img: "122380da3e153e1c0232f4390fbda6ad.jpg", tag: "LFC" },
+  { id: 59, name: "Ajax Classic Amsterdam Jersey", cat: "Jersey", price: 700, old: 900, img: "0ac714ad2d97022fc99b913b5eb6b555.jpg", tag: "Ajax" },
+  { id: 60, name: "Netherlands Vintage Retro Jersey", cat: "Jersey", price: 720, old: 920, img: "122380da3e153e1c0232f4390fbda6ad.jpg", tag: "Retro" }
+];
 
 function waLink(msg) {
   return "https://wa.me/" + PHONE + "?text=" + encodeURIComponent(msg);
 }
 
+function renderProducts() {
+  const grid = document.getElementById("productGrid");
+  const query = document.getElementById("searchInput").value.toLowerCase();
+  
+  let filtered = products.filter(p => {
+    let matchCat = currentCategory === "all" || p.cat === currentCategory;
+    let matchSearch = p.name.toLowerCase().includes(query);
+    return matchCat && matchSearch;
+  });
+
+  if (filtered.length === 0) {
+    grid.innerHTML = `<p style="grid-column: span 4; text-align:center; padding: 40px; color:var(--muted);">কোনো পণ্য পাওয়া যায়নি!</p>`;
+    return;
+  }
+
+  let html = "";
+  filtered.forEach(p => {
+    html += `
+      <div class="product-card" id="prod-${p.id}">
+        <div class="p-image">
+          <span class="badge">${p.tag}</span>
+          <img src="${p.img}" alt="${p.name}" onerror="this.src='0ac714ad2d97022fc99b913b5eb6b555.jpg'">
+        </div>
+        <div class="p-details">
+          <h3 class="p-title">${p.name}</h3>
+          
+          <div class="p-size-box">
+            <label>Size:</label>
+            <div class="sizes-list">
+              <span class="size-chip" onclick="pickSize(this)">M</span>
+              <span class="size-chip active" onclick="pickSize(this)">L</span>
+              <span class="size-chip" onclick="pickSize(this)">XL</span>
+              <span class="size-chip" onclick="pickSize(this)">XXL</span>
+            </div>
+          </div>
+
+          <div class="p-delivery">
+            <select class="d-select">
+              <option value="80">Inside Dhaka (+৳80)</option>
+              <option value="150">Outside Dhaka (+৳150)</option>
+            </select>
+          </div>
+
+          <div style="margin-top:auto;">
+            <span class="current-price">৳${p.price}</span>
+            <span class="old-price">৳${p.old}</span>
+          </div>
+
+          <div class="card-actions" style="margin-top: 8px;">
+            <button class="btn-buy" onclick="buyNow(${p.id})">Buy Now</button>
+            <button class="btn-cart" onclick="addToCart(${p.id})">+ Bag</button>
+          </div>
+        </div>
+      </div>
+    `;
+  });
+  grid.innerHTML = html;
+}
+
 function pickSize(chip) {
-  const list = chip.closest(".sizes-list");
-  list.querySelectorAll(".size-chip").forEach(c => c.classList.remove("active"));
+  chip.closest(".sizes-list").querySelectorAll(".size-chip").forEach(c => c.classList.remove("active"));
   chip.classList.add("active");
 }
 
-function buyNow(btn, name, price) {
-  const card = btn.closest(".product-card");
-  const sizeChip = card.querySelector(".size-chip.active");
-  const size = sizeChip ? sizeChip.textContent : "L";
-  const delSelect = card.querySelector(".d-select");
-  const delCharge = parseInt(delSelect.value, 10);
-  const delLoc = delCharge === 80 ? "Inside Dhaka (৳80)" : "Outside Dhaka (৳150)";
-  const total = price + delCharge;
+function setCategory(cat, el) {
+  currentCategory = cat;
+  document.querySelectorAll(".cat-item").forEach(c => c.classList.remove("active"));
+  el.classList.add("active");
+  renderProducts();
+}
 
-  const msg = `আসসালামু আলাইকুম, VEYROVA Mall থেকে অর্ডার করতে চাই:\n\n` +
-              `📦 পণ্য: ${name}\n` +
-              `🏷️ দাম: ৳${price}\n` +
-              `📏 সাইজ: ${size}\n` +
-              `🚚 ডেলিভারি এলাকা: ${delLoc}\n` +
-              `💰 সর্বমোট: ৳${total}\n\n` +
-              `আমার নাম:\nফোন নম্বর:\nঠিকানা:`;
+function buyNow(id) {
+  const p = products.find(x => x.id === id);
+  const card = document.getElementById(`prod-${id}`);
+  const size = card.querySelector(".size-chip.active").textContent;
+  const delVal = parseInt(card.querySelector(".d-select").value, 10);
+  const delLoc = delVal === 80 ? "Inside Dhaka (৳80)" : "Outside Dhaka (৳150)";
+  const total = p.price + delVal;
 
+  const msg = `আসসালামু আলাইকুম, VEYROVA থেকে অর্ডার করতে চাই:\n\n📦 পণ্য: ${p.name}\n🏷️ দাম: ৳${p.price}\n📏 সাইজ: ${size}\n🚚 ডেলিভারি: ${delLoc}\n💰 সর্বমোট: ৳${total}\n\nআমার নাম:\nফোন নম্বর:\nঠিকানা:`;
   window.open(waLink(msg), "_blank", "noopener");
+}
+
+function addToCart(id) {
+  const p = products.find(x => x.id === id);
+  const card = document.getElementById(`prod-${id}`);
+  const size = card.querySelector(".size-chip.active").textContent;
+  const delVal = parseInt(card.querySelector(".d-select").value, 10);
+  
+  cart.push({ ...p, size, delVal });
+  updateCartUI();
+  toggleCart();
+}
+
+function updateCartUI() {
+  document.getElementById("cartCount").textContent = cart.length;
+  const container = document.getElementById("cartItems");
+  
+  if (cart.length === 0) {
+    container.innerHTML = `<p style="color:var(--muted); text-align:center; margin-top:30px;">Your bag is empty.</p>`;
+    document.getElementById("cartSubtotal").textContent = "৳0";
+    return;
+  }
+
+  let html = "";
+  let sub = 0;
+  cart.forEach((item, idx) => {
+    sub += item.price;
+    html += `
+      <div class="cart-item">
+        <img src="${item.img}" alt="${item.name}">
+        <div style="flex:1;">
+          <div style="font-size:0.82rem; font-weight:600;">${item.name}</div>
+          <div style="font-size:0.75rem; color:var(--muted);">Size: ${item.size} | ৳${item.price}</div>
+          <span style="color:red; font-size:0.7rem; cursor:pointer;" onclick="removeItem(${idx})">Remove</span>
+        </div>
+      </div>
+    `;
+  });
+  container.innerHTML = html;
+  document.getElementById("cartSubtotal").textContent = `৳${sub}`;
+}
+
+function removeItem(idx) {
+  cart.splice(idx, 1);
+  updateCartUI();
 }
 
 function toggleCart() {
   document.getElementById("cartDrawer").classList.toggle("open");
 }
 
-function addToCart(btn, name, price, img) {
-  const card = btn.closest(".product-card");
-  const sizeChip = card.querySelector(".size-chip.active");
-  const size = sizeChip ? sizeChip.textContent : "L";
-
-  cart.push({ name, price, size, img });
-  updateCartUI();
-  toggleCart();
-}
-
-function updateCartUI() {
-  const container = document.getElementById("cartItems");
-  const countEl = document.getElementById("cartCount");
-  const subtotalEl = document.getElementById("cartSubtotal");
-
-  countEl.textContent = cart.length;
-
-  if (cart.length === 0) {
-    container.innerHTML = `<p style="color:var(--muted); text-align:center; margin-top:30px;">Your bag is currently empty.</p>`;
-    subtotalEl.textContent = "৳0";
-    return;
-  }
-
-  let html = "";
-  let sub = 0;
-  cart.forEach((item, index) => {
-    sub += item.price;
-    html += `
-      <div class="cart-item">
-        <img src="${item.img}" alt="${item.name}">
-        <div style="flex:1;">
-          <div class="cart-item-title">${item.name}</div>
-          <div class="cart-item-meta">Size: <b>${item.size}</b> | Price: ৳${item.price}</div>
-          <span style="color:red; font-size:0.7rem; cursor:pointer;" onclick="removeCart(${index})">Remove</span>
-        </div>
-      </div>
-    `;
-  });
-
-  container.innerHTML = html;
-  subtotalEl.textContent = `৳${sub}`;
-}
-
-function removeCart(idx) {
-  cart.splice(idx, 1);
-  updateCartUI();
-}
-
 function checkoutCart() {
-  if (cart.length === 0) return alert("Your bag is empty!");
+  if (cart.length === 0) return alert("Bag is empty!");
   let summary = cart.map((item, i) => `${i+1}. ${item.name} (${item.size}) - ৳${item.price}`).join("\n");
   let total = cart.reduce((s, item) => s + item.price, 0);
 
-  const msg = `আসসালামু আলাইকুম, VEYROVA Mall শপিং ব্যাগ অর্ডার:\n\n${summary}\n\n💰 সাবটোটাল: ৳${total}\n\nআমার নাম:\nফোন নম্বর:\nঠিকানা:`;
+  const msg = `আসসালামু আলাইকুম, VEYROVA Cart Order:\n\n${summary}\n\n💰 Subtotal: ৳${total}\n\nName:\nPhone:\nAddress:`;
   window.open(waLink(msg), "_blank", "noopener");
 }
 
-function filterCat(cat, el) {
-  currentCat = cat;
-  document.querySelectorAll(".cat-item").forEach(c => c.classList.remove("active"));
-  el.classList.add("active");
-  filterProducts();
-}
-
-function filterProducts() {
-  const query = document.getElementById("searchInput").value.toLowerCase();
-  document.querySelectorAll(".product-card").forEach(card => {
-    const name = card.dataset.name.toLowerCase();
-    const cat = card.dataset.category;
-    const matchCat = currentCat === "all" || cat === currentCat;
-    const matchSearch = name.includes(query);
-    card.style.display = matchCat && matchSearch ? "flex" : "none";
-  });
-}
-
-setInterval(() => {
-  const secEl = document.getElementById("tsec");
-  let s = parseInt(secEl.textContent, 10);
-  if (s > 0) {
-    secEl.textContent = String(s - 1).padStart(2, "0");
-  } else {
-    secEl.textContent = "59";
-  }
-}, 1000);
-
 document.getElementById("waFloat").href = waLink("আসসালামু আলাইকুম, VEYROVA Mall সম্পর্কে জানতে চাই।");
 document.getElementById("year").textContent = new Date().getFullYear();
+
+renderProducts();
 </script>
 </body>
 </html>
