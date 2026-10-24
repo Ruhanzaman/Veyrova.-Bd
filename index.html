@@ -1,12 +1,12 @@
-
- lang="bn">
+<!doctype html>
+<html lang="bn">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="theme-color" content="#f57224">
-<meta name="description" content="VEYROVA Mall — Premium Streetwear, Hoodies, Shirts & Jerseys in Bangladesh.">
+<meta name="description" content="VEYROVA Mall — Premium Streetwear Collection in Bangladesh.">
 <link rel="icon" type="image/png" href="logo.png">
-<title>VEYROVA Mall — Streetwear, Hoodies & Jerseys in BD</title>
+<title>VEYROVA Mall — Premium Streetwear BD</title>
 <style>
 :root {
   --orange: #f57224;
@@ -44,10 +44,6 @@ header { background: #fff; position: sticky; top: 0; z-index: 100; box-shadow: 0
 .hero-banner h1 { font-size: 1.8rem; margin: 0 0 8px; }
 .hero-banner p { margin: 0; font-size: 0.9rem; opacity: 0.9; }
 
-.category-bar { display: flex; gap: 10px; margin-bottom: 16px; overflow-x: auto; padding-bottom: 4px; }
-.cat-item { background: #fff; border: 1px solid var(--line); padding: 8px 16px; border-radius: 20px; font-size: 0.85rem; font-weight: 600; cursor: pointer; white-space: nowrap; }
-.cat-item.active, .cat-item:hover { background: var(--orange); color: #fff; border-color: var(--orange); }
-
 .products-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 14px; }
 .product-card { background: var(--card); border-radius: var(--radius); overflow: hidden; border: 1px solid var(--line); display: flex; flex-direction: column; transition: 0.2s; }
 .product-card:hover { border-color: var(--orange); box-shadow: 0 4px 12px rgba(0,0,0,0.08); }
@@ -58,7 +54,6 @@ header { background: #fff; position: sticky; top: 0; z-index: 100; box-shadow: 0
 .p-details { padding: 12px; display: flex; flex-direction: column; flex: 1; }
 .p-title { font-size: 0.88rem; font-weight: 600; margin: 0 0 6px; height: 36px; overflow: hidden; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; }
 .current-price { color: var(--orange); font-size: 1.15rem; font-weight: 800; }
-.old-price { color: var(--muted); font-size: 0.75rem; text-decoration: line-through; margin-left: 6px; }
 
 .p-size-box { margin: 6px 0; }
 .p-size-box label { font-size: 0.7rem; color: var(--muted); display: block; margin-bottom: 2px; font-weight: 600; }
@@ -108,7 +103,7 @@ footer { background: var(--dark); color: #b0b0b0; padding: 30px 0 20px; margin-t
       VEYROVA
     </a>
     <div class="search-container">
-      <input type="text" id="searchInput" placeholder="Search Hoodie, Shirt, Jersey..." onkeyup="renderProducts()">
+      <input type="text" id="searchInput" placeholder="Search Veyrova items..." onkeyup="renderProducts()">
       <button class="search-btn">🔍</button>
     </div>
     <div class="cart-trigger" onclick="toggleCart()">
@@ -120,17 +115,10 @@ footer { background: var(--dark); color: #b0b0b0; padding: 30px 0 20px; margin-t
 <main class="wrap">
   <div class="hero-banner">
     <div>
-      <h1>VEYROVA STREETWEAR DROP</h1>
-      <p>Explore 60+ Exclusive Hoodies, Shirts & Jerseys tailored for Bangladesh.</p>
+      <h1>VEYROVA EXCLUSIVE DROP</h1>
+      <p>Premium streetwear collection tailored for Bangladesh.</p>
     </div>
     <img src="logo.png" alt="Logo" style="max-height:80px;" onerror="this.style.display='none'">
-  </div>
-
-  <div class="category-bar">
-    <div class="cat-item active" onclick="setCategory('all', this)">All Items (60)</div>
-    <div class="cat-item" onclick="setCategory('Hoodie', this)">Hoodies (20)</div>
-    <div class="cat-item" onclick="setCategory('Shirt', this)">Shirts (20)</div>
-    <div class="cat-item" onclick="setCategory('Jersey', this)">Jerseys (20)</div>
   </div>
 
   <div class="products-grid" id="productGrid"></div>
@@ -162,74 +150,13 @@ footer { background: var(--dark); color: #b0b0b0; padding: 30px 0 20px; margin-t
 <script>
 const PHONE = "8801762400371";
 let cart = [];
-let currentCategory = "all";
 
 const products = [
-  // --- 20 HOODIES ---
-  { id: 1, name: "Veyrova Black Oversized Fleece Hoodie", cat: "Hoodie", price: 1150, old: 1400, img: "38a5be950c50e0130411f7a9e289f0e1.jpg", tag: "Hot Drop" },
-  { id: 2, name: "Minimalist White Streetwear Hoodie", cat: "Hoodie", price: 1200, old: 1450, img: "38a5be950c50e0130411f7a9e289f0e1.jpg", tag: "Trending" },
-  { id: 3, name: "Vintage Wash Heavyweight Hoodie", cat: "Hoodie", price: 1350, old: 1600, img: "38a5be950c50e0130411f7a9e289f0e1.jpg", tag: "New" },
-  { id: 4, name: "Olive Green Drop-shoulder Hoodie", cat: "Hoodie", price: 1100, old: 1350, img: "38a5be950c50e0130411f7a9e289f0e1.jpg", tag: "Sale" },
-  { id: 5, name: "Charcoal Grey Zip-Up Hoodie", cat: "Hoodie", price: 1250, old: 1500, img: "38a5be950c50e0130411f7a9e289f0e1.jpg", tag: "Popular" },
-  { id: 6, name: "Navy Blue Graphic Print Hoodie", cat: "Hoodie", price: 1050, old: 1300, img: "38a5be950c50e0130411f7a9e289f0e1.jpg", tag: "Best" },
-  { id: 7, name: "Maroon Cyberpunk Techwear Hoodie", cat: "Hoodie", price: 1400, old: 1700, img: "38a5be950c50e0130411f7a9e289f0e1.jpg", tag: "Limited" },
-  { id: 8, name: "Beige Neutral Tone Fleece Hoodie", cat: "Hoodie", price: 1150, old: 1400, img: "38a5be950c50e0130411f7a9e289f0e1.jpg", tag: "Classic" },
-  { id: 9, name: "Coffee Brown Aesthetic Hoodie", cat: "Hoodie", price: 1200, old: 1450, img: "38a5be950c50e0130411f7a9e289f0e1.jpg", tag: "Hot" },
-  { id: 10, name: "Off-White Acid Wash Hoodie", cat: "Hoodie", price: 1300, old: 1550, img: "38a5be950c50e0130411f7a9e289f0e1.jpg", tag: "New" },
-  { id: 11, name: "Jet Black Skull Graphic Hoodie", cat: "Hoodie", price: 1250, old: 1500, img: "38a5be950c50e0130411f7a9e289f0e1.jpg", tag: "Street" },
-  { id: 12, name: "Mustard Yellow Street Hoodie", cat: "Hoodie", price: 1050, old: 1300, img: "38a5be950c50e0130411f7a9e289f0e1.jpg", tag: "Sale" },
-  { id: 13, name: "Lavender Pastel Oversized Hoodie", cat: "Hoodie", price: 1150, old: 1400, img: "38a5be950c50e0130411f7a9e289f0e1.jpg", tag: "Soft" },
-  { id: 14, name: "Emerald Green High-Neck Hoodie", cat: "Hoodie", price: 1350, old: 1600, img: "38a5be950c50e0130411f7a9e289f0e1.jpg", tag: "Winter" },
-  { id: 15, name: "Slate Grey Cargo Pocket Hoodie", cat: "Hoodie", price: 1400, old: 1650, img: "38a5be950c50e0130411f7a9e289f0e1.jpg", tag: "Utility" },
-  { id: 16, name: "Red Dragon Edition Hoodie", cat: "Hoodie", price: 1250, old: 1500, img: "38a5be950c50e0130411f7a9e289f0e1.jpg", tag: "Graphic" },
-  { id: 17, name: "Royal Blue Basic Fleece Hoodie", cat: "Hoodie", price: 950, old: 1200, img: "38a5be950c50e0130411f7a9e289f0e1.jpg", tag: "Value" },
-  { id: 18, name: "Dark Teal Minimalist Hoodie", cat: "Hoodie", price: 1100, old: 1350, img: "38a5be950c50e0130411f7a9e289f0e1.jpg", tag: "Chill" },
-  { id: 19, name: "Sandstone Thermal Lined Hoodie", cat: "Hoodie", price: 1450, old: 1750, img: "38a5be950c50e0130411f7a9e289f0e1.jpg", tag: "Warm" },
-  { id: 20, name: "Urban Camo Streetwear Hoodie", cat: "Hoodie", price: 1300, old: 1550, img: "38a5be950c50e0130411f7a9e289f0e1.jpg", tag: "Camo" },
-
-  // --- 20 SHIRTS ---
-  { id: 21, name: "Veyrova Black Twill Casual Shirt", cat: "Shirt", price: 750, old: 950, img: "5d5192e4fa97c7008da4be2497d0c5d9 (1).jpg", tag: "Best" },
-  { id: 22, name: "Oxford White Formal/Casual Shirt", cat: "Shirt", price: 700, old: 900, img: "5d5192e4fa97c7008da4be2497d0c5d9 (1).jpg", tag: "Classic" },
-  { id: 23, name: "Cuban Collar Tropical Printed Shirt", cat: "Shirt", price: 800, old: 1000, img: "5d5192e4fa97c7008da4be2497d0c5d9 (1).jpg", tag: "Summer" },
-  { id: 24, name: "Olive Green Corduroy Shirt", cat: "Shirt", price: 900, old: 1100, img: "5d5192e4fa97c7008da4be2497d0c5d9 (1).jpg", tag: "Trending" },
-  { id: 25, name: "Classic Blue Denim Shirt", cat: "Shirt", price: 850, old: 1050, img: "5d5192e4fa97c7008da4be2497d0c5d9 (1).jpg", tag: "Denim" },
-  { id: 26, name: "Maroon Check Flannel Shirt", cat: "Shirt", price: 800, old: 1000, img: "5d5192e4fa97c7008da4be2497d0c5d9 (1).jpg", tag: "Flannel" },
-  { id: 27, name: "Beige Linen Summer Shirt", cat: "Shirt", price: 750, old: 950, img: "5d5192e4fa97c7008da4be2497d0c5d9 (1).jpg", tag: "Linen" },
-  { id: 28, name: "Charcoal Grey Oversized Shirt", cat: "Shirt", price: 850, old: 1050, img: "5d5192e4fa97c7008da4be2497d0c5d9 (1).jpg", tag: "Street" },
-  { id: 29, name: "Navy Blue Striped Casual Shirt", cat: "Shirt", price: 720, old: 920, img: "5d5192e4fa97c7008da4be2497d0c5d9 (1).jpg", tag: "Striped" },
-  { id: 30, name: "Sage Green Oxford Shirt", cat: "Shirt", price: 780, old: 980, img: "5d5192e4fa97c7008da4be2497d0c5d9 (1).jpg", tag: "Soft" },
-  { id: 31, name: "Mustard Yellow Corduroy Shirt", cat: "Shirt", price: 920, old: 1150, img: "5d5192e4fa97c7008da4be2497d0c5d9 (1).jpg", tag: "Vibrant" },
-  { id: 32, name: "Pink Pastel Casual Shirt", cat: "Shirt", price: 700, old: 900, img: "5d5192e4fa97c7008da4be2497d0c5d9 (1).jpg", tag: "Pastel" },
-  { id: 33, name: "Dark Brown Twill Shirt", cat: "Shirt", price: 760, old: 960, img: "5d5192e4fa97c7008da4be2497d0c5d9 (1).jpg", tag: "Twill" },
-  { id: 34, name: "White Cuban Camp Shirt", cat: "Shirt", price: 820, old: 1020, img: "5d5192e4fa97c7008da4be2497d0c5d9 (1).jpg", tag: "Camp" },
-  { id: 35, name: "Black Satin Finish Party Shirt", cat: "Shirt", price: 880, old: 1100, img: "5d5192e4fa97c7008da4be2497d0c5d9 (1).jpg", tag: "Party" },
-  { id: 36, name: "Checkered Red & Black Flannel", cat: "Shirt", price: 830, old: 1030, img: "5d5192e4fa97c7008da4be2497d0c5d9 (1).jpg", tag: "Check" },
-  { id: 37, name: "Mint Green Linen Shirt", cat: "Shirt", price: 750, old: 950, img: "5d5192e4fa97c7008da4be2497d0c5d9 (1).jpg", tag: "Mint" },
-  { id: 38, name: "Slate Grey Workwear Shirt", cat: "Shirt", price: 800, old: 1000, img: "5d5192e4fa97c7008da4be2497d0c5d9 (1).jpg", tag: "Work" },
-  { id: 39, name: "Teal Blue Casual Shirt", cat: "Shirt", price: 720, old: 920, img: "5d5192e4fa97c7008da4be2497d0c5d9 (1).jpg", tag: "Casual" },
-  { id: 40, name: "Khaki Utility Pocket Shirt", cat: "Shirt", price: 850, old: 1050, img: "5d5192e4fa97c7008da4be2497d0c5d9 (1).jpg", tag: "Utility" },
-
-  // --- 20 JERSEYS ---
-  { id: 41, name: "Spain Home Fan Edition Jersey", cat: "Jersey", price: 600, old: 800, img: "0ac714ad2d97022fc99b913b5eb6b555.jpg", tag: "Spain" },
-  { id: 42, name: "Barca Home Classic Jersey", cat: "Jersey", price: 700, old: 900, img: "122380da3e153e1c0232f4390fbda6ad.jpg", tag: "Barca" },
-  { id: 43, name: "Argentina World Cup Champion Jersey", cat: "Jersey", price: 650, old: 850, img: "0ac714ad2d97022fc99b913b5eb6b555.jpg", tag: "Arg" },
-  { id: 44, name: "Brazil Yellow Home Jersey", cat: "Jersey", price: 650, old: 850, img: "122380da3e153e1c0232f4390fbda6ad.jpg", tag: "Brazil" },
-  { id: 45, name: "Real Madrid Home Jersey", cat: "Jersey", price: 680, old: 880, img: "0ac714ad2d97022fc99b913b5eb6b555.jpg", tag: "Madrid" },
-  { id: 46, name: "Manchester City Home Jersey", cat: "Jersey", price: 670, old: 870, img: "122380da3e153e1c0232f4390fbda6ad.jpg", tag: "City" },
-  { id: 47, name: "Arsenal Red/White Jersey", cat: "Jersey", price: 660, old: 860, img: "0ac714ad2d97022fc99b913b5eb6b555.jpg", tag: "Arsenal" },
-  { id: 48, name: "Manchester United Retro Jersey", cat: "Jersey", price: 700, old: 900, img: "122380da3e153e1c0232f4390fbda6ad.jpg", tag: "ManU" },
-  { id: 49, name: "AC Milan Classic Red & Black Jersey", cat: "Jersey", price: 650, old: 850, img: "0ac714ad2d97022fc99b913b5eb6b555.jpg", tag: "Milan" },
-  { id: 50, name: "Inter Miami Pink Jersey", cat: "Jersey", price: 680, old: 880, img: "122380da3e153e1c0232f4390fbda6ad.jpg", tag: "Miami" },
-  { id: 51, name: "Portugal Euro Edition Jersey", cat: "Jersey", price: 650, old: 850, img: "0ac714ad2d97022fc99b913b5eb6b555.jpg", tag: "Portugal" },
-  { id: 52, name: "France Home Blue Jersey", cat: "Jersey", price: 660, old: 860, img: "122380da3e153e1c0232f4390fbda6ad.jpg", tag: "France" },
-  { id: 53, name: "Germany White Home Jersey", cat: "Jersey", price: 650, old: 850, img: "0ac714ad2d97022fc99b913b5eb6b555.jpg", tag: "Germany" },
-  { id: 54, name: "Al-Nassr Yellow Jersey", cat: "Jersey", price: 620, old: 820, img: "122380da3e153e1c0232f4390fbda6ad.jpg", tag: "CR7" },
-  { id: 55, name: "Bayern Munich Red Jersey", cat: "Jersey", price: 670, old: 870, img: "0ac714ad2d97022fc99b913b5eb6b555.jpg", tag: "Bayern" },
-  { id: 56, name: "PSG Home Edition Jersey", cat: "Jersey", price: 680, old: 880, img: "122380da3e153e1c0232f4390fbda6ad.jpg", tag: "PSG" },
-  { id: 57, name: "Juventus Black & White Jersey", cat: "Jersey", price: 650, old: 850, img: "0ac714ad2d97022fc99b913b5eb6b555.jpg", tag: "Juve" },
-  { id: 58, name: "Liverpool Home Red Jersey", cat: "Jersey", price: 660, old: 860, img: "122380da3e153e1c0232f4390fbda6ad.jpg", tag: "LFC" },
-  { id: 59, name: "Ajax Classic Amsterdam Jersey", cat: "Jersey", price: 700, old: 900, img: "0ac714ad2d97022fc99b913b5eb6b555.jpg", tag: "Ajax" },
-  { id: 60, name: "Netherlands Vintage Retro Jersey", cat: "Jersey", price: 720, old: 920, img: "122380da3e153e1c0232f4390fbda6ad.jpg", tag: "Retro" }
+  { id: 1, name: "Veyrova Item 01", price: 1300, img: "cb2179b152d67092e4cc92b0c11327a3.jpg", tag: "New Drop" },
+  { id: 2, name: "Veyrova Item 02", price: 1250, img: "a8a418378900f0fee3c64b8c66acd415.jpg", tag: "Hot Deal" },
+  { id: 3, name: "Veyrova Item 03", price: 550,  img: "d3aa27a1ec43fe1a77bc4ec434591572.jpg", tag: "Popular" },
+  { id: 4, name: "Veyrova Item 04", price: 5900, img: "7057493254a7d7ddb1e86ae947756b3c.jpg", tag: "Premium" },
+  { id: 5, name: "Veyrova Item 05", price: 530,  img: "6fd7e85ea72095bdb84ab4c5e1d2308a.jpg", tag: "Best Buy" }
 ];
 
 function waLink(msg) {
@@ -240,11 +167,7 @@ function renderProducts() {
   const grid = document.getElementById("productGrid");
   const query = document.getElementById("searchInput").value.toLowerCase();
   
-  let filtered = products.filter(p => {
-    let matchCat = currentCategory === "all" || p.cat === currentCategory;
-    let matchSearch = p.name.toLowerCase().includes(query);
-    return matchCat && matchSearch;
-  });
+  let filtered = products.filter(p => p.name.toLowerCase().includes(query));
 
   if (filtered.length === 0) {
     grid.innerHTML = `<p style="grid-column: span 4; text-align:center; padding: 40px; color:var(--muted);">কোনো পণ্য পাওয়া যায়নি!</p>`;
@@ -257,7 +180,7 @@ function renderProducts() {
       <div class="product-card" id="prod-${p.id}">
         <div class="p-image">
           <span class="badge">${p.tag}</span>
-          <img src="${p.img}" alt="${p.name}" onerror="this.src='0ac714ad2d97022fc99b913b5eb6b555.jpg'">
+          <img src="${p.img}" alt="${p.name}">
         </div>
         <div class="p-details">
           <h3 class="p-title">${p.name}</h3>
@@ -281,7 +204,6 @@ function renderProducts() {
 
           <div style="margin-top:auto;">
             <span class="current-price">৳${p.price}</span>
-            <span class="old-price">৳${p.old}</span>
           </div>
 
           <div class="card-actions" style="margin-top: 8px;">
@@ -298,13 +220,6 @@ function renderProducts() {
 function pickSize(chip) {
   chip.closest(".sizes-list").querySelectorAll(".size-chip").forEach(c => c.classList.remove("active"));
   chip.classList.add("active");
-}
-
-function setCategory(cat, el) {
-  currentCategory = cat;
-  document.querySelectorAll(".cat-item").forEach(c => c.classList.remove("active"));
-  el.classList.add("active");
-  renderProducts();
 }
 
 function buyNow(id) {
